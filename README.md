@@ -15,6 +15,24 @@ Para saber a quantidade de colunas no grid, use Len(__oLista:aColumns)
 
 <p><center><img src="/Resources/xtcbrowser3.png"></center></p>
 
+# Estrutura da função
+
+U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAlinhamento, _nWidth, _nHeight, _nBotoes )
+
+| 	Argumento	 | 	Finalidade	 | 	Obrigatório	 |  	Valor padrão	 | 
+| 	:-----:	 | 	:-----:	 | 	:-----:	 | 	:-----:	 | 
+| 	oTela	| 	Nome do objeto pai	| 	X	 | 	 	 | 
+| 	_cAlias	| 	Alias da tabela	| 	X	 |  	 	 |
+| 	_cQuery	| 	Query que será executada	| 	Opcional	 |  	 	 |
+| 	_nIndice	| 	Número do indice da tabela, será usada para montar a pesquisa no grid	| 	Opcional	 |  	1	 |
+| 	_aIndice	| 	Campos extras que irão complementar o indice	| 	Opcional	 |  	 	 |
+| 	_aFiltro	| 	Campos extras que irão complementar o filtro que poderá ser usado na busca dos dados	| 	Opcional	 |  	 	 |
+| 	_aLegenda	| 	Legenda	| 	Opcional	 |  	 	 |
+| 	_nAlinhamento	| 	Alinhamento do componente na tela, podendo ser CONTROL_ALIGN_ALLCLIENT, CONTROL_ALIGN_TOP, CONTROL_ALIGN_BOTTOM, CONTROL_ALIGN_LEFT, CONTROL_ALIGN_RIGHT	| 	Opcional	 |  	CONTROL_ALIGN_ALLCLIENT	 |
+| 	_nWidth	| 	Largura do componente	| 	Opcional	 |  	oTela:nWidth	 |
+| 	_nHeight	| 	Altura do componente	| 	Opcional	 |  	oTela:nHeight	 |
+| 	_nBotoes	| 	Posição dos botões na tela. Podendo ser 1 = Topo da janela, 2 = Rodape da janela	| 	Opcional	 |  	1	 |
+
 # Pontos de Entrada
 
 ## XBROWSEF
@@ -71,9 +89,9 @@ O array é composto por 3 partes:
 User Function XBROWSEL()
 	Local aLegenda := aClone(PARAMIXB[1])
 
-	aadd(aLegenda, {"ROUND(SE2->E2_SALDO,2) == 0","Titulo Baixado","sps_innovation_pilot"})
-	aadd(aLegenda, {"ROUND(SE2->E2_SALDO,2) > 0 .AND. ROUND(SE2->E2_SALDO,2) <> ROUND(SE2->E2_VALOR,2)","Titulos Baixados Parcialmente","sps_not_rated"})
-	aadd(aLegenda, {"ROUND(SE2->E2_SALDO,2) == ROUND(SE2->E2_VALOR,2)","Titulos Pendentes","sps_prime_emergency"})
+	aadd(aLegenda, {"ROUND(SE2->E2_SALDO,2) == 0","Titulo Baixado","BR_VERMELHO"})
+	aadd(aLegenda, {"ROUND(SE2->E2_SALDO,2) > 0 .AND. ROUND(SE2->E2_SALDO,2) <> ROUND(SE2->E2_VALOR,2)","Titulos Baixados Parcialmente","BR_AMARELO"})
+	aadd(aLegenda, {"ROUND(SE2->E2_SALDO,2) == ROUND(SE2->E2_VALOR,2)","Titulos Pendentes","BR_VERDE"})
 
 Return(aLegenda)
 ```
@@ -194,3 +212,4 @@ Static Function Gravar()
 	Endif
 
 Return
+```
