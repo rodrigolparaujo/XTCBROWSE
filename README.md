@@ -20,7 +20,7 @@ Para saber a quantidade de colunas no grid, use Len(__oLista:aColumns)
 U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAlinhamento, _nWidth, _nHeight, _nBotoes )
 
 | 	Argumento	 | 	Finalidade	 | 	Obrigatório	 |  	Valor padrão	 | 
-| 	:-----:	 | 	:-----:	 | 	:-----:	 | 	:-----:	 | 
+| 	:-----:	 | 	-----	 | 	:-----:	 | 	:-----:	 | 
 | 	oTela	| 	Nome do objeto pai	| 	X	 | 	 	 | 
 | 	_cAlias	| 	Alias da tabela	| 	X	 |  	 	 |
 | 	_cQuery	| 	Query que será executada	| 	Opcional	 |  	 	 |
@@ -32,6 +32,16 @@ U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAl
 | 	_nWidth	| 	Largura do componente	| 	Opcional	 |  	oTela:nWidth	 |
 | 	_nHeight	| 	Altura do componente	| 	Opcional	 |  	oTela:nHeight	 |
 | 	_nBotoes	| 	Posição dos botões na tela. Podendo ser 1 = Topo da janela, 2 = Rodape da janela	| 	Opcional	 |  	1	 |
+
+Variáveis públicas
+
+| 	Variavel	 | 	Finalidade	 |
+| 	:-----:	 | 	-----	 |
+| 	__oLista	| 	Nome do controle	|
+| 	__aLista	| 	Array contendo os registros do grid	|
+| 	__lVersao	| 	Se .T. mostra o menu para atualizar o componente	|
+| 	__cUrlPatch	| 	Url para baixar a nova versão do componente	|
+
 
 # Pontos de Entrada
 
