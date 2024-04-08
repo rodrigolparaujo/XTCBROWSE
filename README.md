@@ -17,7 +17,11 @@ Para saber a quantidade de colunas no grid, use Len(__oLista:aColumns)
 
 # Estrutura da função
 
-U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAlinhamento, _nWidth, _nHeight, _nBotoes )
+```xbase
+
+U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAlinhamento, _nWidth, _nHeight, _nBotoes, _lVersao )
+
+```
 
 | 	Argumento	 | 	Finalidade	 | 	Obrigatório	 |  	Valor padrão	 | 
 | 	:-----:	 | 	-----	 | 	:-----:	 | 	:-----:	 | 
@@ -32,6 +36,7 @@ U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAl
 | 	_nWidth	| 	Largura do componente	| 	Opcional	 |  	oTela:nWidth	 |
 | 	_nHeight	| 	Altura do componente	| 	Opcional	 |  	oTela:nHeight	 |
 | 	_nBotoes	| 	Posição dos botões na tela. Podendo ser 1 = Topo da janela, 2 = Rodape da janela	| 	Opcional	 |  	1	 |
+| 	_lVersao	| 	Exibe um botão para mostrar a versão do componete. Se .T. mostra o menu para atualizar o componente	| 	Opcional	 |  	.T.	 |
 
 Variáveis públicas
 
@@ -39,7 +44,7 @@ Variáveis públicas
 | 	:-----:	 | 	-----	 |
 | 	__oLista	| 	Nome do controle	|
 | 	__aLista	| 	Array contendo os registros do grid	|
-| 	__lVersao	| 	Se .T. mostra o menu para atualizar o componente	|
+| 	__cVersao	| 	Versão do componente	|
 | 	__cUrlPatch	| 	Url para baixar a nova versão do componente	|
 
 
@@ -52,7 +57,11 @@ O array é composto por 2 partes:
 - Campo
 - Se .T. será montado um filtro de/até do campo. Se .F. terá exibido apenas o campo
 
+```xbase
+
 {"E2_EMISSAO",.T.}
+
+```
 
 Data Emissão de
 
