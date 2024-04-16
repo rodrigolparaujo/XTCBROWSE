@@ -1,5 +1,5 @@
 # XTCBROWSE
-Componente para gerar um TcBrowse Avançado com pesquisa, exportação para excel, legendas, checkbox, pontos de entrada, etc...
+Componente para gerar um TcBrowse Avançado com pesquisa, exportação para excel, legendas, checkbox, pontos de entrada,edição simples de campos, etc...
 
 O nome do objeto é <b>__oLista</b>
 
@@ -14,6 +14,10 @@ Para saber a quantidade de colunas no grid, use Len(__oLista:aColumns)
 <p><center><img src="/Resources/xtcbrowser2.png"></center></p>
 
 <p><center><img src="/Resources/xtcbrowser3.png"></center></p>
+
+<p><center><img src="/Resources/botaodireito.png"></center></p>
+
+<p><center><img src="/Resources/edicao de campos.gif"></center></p>
 
 # Estrutura da função
 
@@ -122,7 +126,10 @@ O array é composto por 3 partes:
 - Titulo do botão
 - Função que será executa
 - imagem do botão
-  
+
+<p><center><img src="/Resources/xtcbrowser3.png"></center></p>
+<p><center><img src="/Resources/botaodireito.png"></center></p>
+
 ```xbase
 User Function XBROWSEB()
 	Local aBotoes := {}
@@ -139,6 +146,8 @@ Ponto de entrada para permitir campos editáveis
 O array é composto por 2 partes:
 - Coluna que deseja a edição
 - Se .T. é obrigatorio o valor
+
+<p><center><img src="/Resources/edicao de campos.png"></center></p>
   
 ```xbase
 User Function XBROWSEE()
