@@ -133,6 +133,37 @@ User Function XBROWSEB()
 Return(aBotoes)
 ```
 
+## XBROWSEE
+Ponto de entrada para permitir campos editáveis
+
+O array é composto por 2 partes:
+- Coluna que deseja a edição
+- Se .T. é obrigatorio o valor
+  
+```xbase
+User Function XBROWSEE()
+	Local aColunas := {}
+	
+	/*
+	Argumentos:
+	1 = Coluna que deseja editar
+	2 = Se .T. é obrigatorio o valor
+	*/
+
+	Aadd(aColunas, {1,.T.})
+	Aadd(aColunas, {2,.T.})
+	Aadd(aColunas, {4,.T.})
+	Aadd(aColunas, {6,.T.})
+	Aadd(aColunas, {8,.T.})
+	Aadd(aColunas, {10,.T.})
+	Aadd(aColunas, {12,.T.})
+	Aadd(aColunas, {13,.T.})
+	Aadd(aColunas, {14,.T.})
+	Aadd(aColunas, {15,.T.})
+	
+Return(aColunas)
+```
+
 ## XBROWSEQ
 Ponto de entrada para informar a query que será executada no controle
 
