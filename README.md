@@ -19,11 +19,13 @@ Para saber a quantidade de colunas no grid, use Len(__oLista:aColumns)
 
 <p><center><img src="/Resources/edicao de campos.gif"></center></p>
 
+<p><center><img src="/Resources/selecao-avancada.gif"></center></p>
+
 # Estrutura da função
 
 ```xbase
 
-U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAlinhamento, _nWidth, _nHeight, _nBotoes, _lVersao )
+U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAlinhamento, _nWidth, _nHeight, _nBotoes, _lVersao, _lLayout, _lCheckbox, _lSelecao  )
 
 ```
 
@@ -41,6 +43,9 @@ U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAl
 | 	_nHeight	| 	Altura do componente	| 	Opcional	 |  	oTela:nHeight	 |
 | 	_nBotoes	| 	Posição dos botões na tela. Podendo ser 1 = Topo da janela, 2 = Rodape da janela	| 	Opcional	 |  	1	 |
 | 	_lVersao	| 	Exibe um botão para mostrar a versão do componete. Se .T. mostra o menu para atualizar o componente	| 	Opcional	 |  	.T.	 |
+| 	_lLayout	| 	Exibe uma tela com formatação usando CSS	| 	Opcional	 |  	.T.	 |
+| 	_lCheckbox	| 	Exibe um checkbox na tela para seleção	| 	Opcional	 |  	.T.	 |
+| 	_lSelecao	| 	Exibe uma tela de seleção de registros com mais recursos	| 	Opcional	 |  	.T.	 |
 
 Variáveis públicas
 
