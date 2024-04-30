@@ -17,7 +17,7 @@ Para saber a quantidade de colunas no grid, use Len(__oLista:aColumns)
 
 <p><center><img src="/Resources/botaodireito.png"></center></p>
 
-<p><center><img src="/Resources/edicao de campos.gif"></center></p>
+<p><center><img src="/Resources/edicao de campos2.png"></center></p>
 
 <p><center><img src="/Resources/selecao-avancada.gif"></center></p>
 
