@@ -152,7 +152,7 @@ O array é composto por 2 partes:
 - Coluna que deseja a edição
 - Se .T. é obrigatorio o valor
 
-<p><center><img src="/Resources/edicao de campos.png"></center></p>
+<p><center><img src="/Resources/edicao de campos2.png"></center></p>
   
 ```xbase
 User Function XBROWSEE()
