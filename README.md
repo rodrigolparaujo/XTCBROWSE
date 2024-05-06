@@ -17,9 +17,11 @@ Para saber a quantidade de colunas no grid, use Len(__oLista:aColumns)
 
 <p><center><img src="/Resources/botaodireito.png"></center></p>
 
-<p><center><img src="/Resources/edicao de campos2.png"></center></p>
+<p><center><img src="/Resources/edicao-campos.gif"></center></p>
 
 <p><center><img src="/Resources/selecao-avancada.gif"></center></p>
+
+<p><center><img src="/Resources/exportar-excel.png"></center></p>
 
 # Estrutura da função
 
@@ -152,7 +154,7 @@ O array é composto por 2 partes:
 - Coluna que deseja a edição
 - Se .T. é obrigatorio o valor
 
-<p><center><img src="/Resources/edicao de campos2.png"></center></p>
+<p><center><img src="/Resources/edicao-campos.gif"></center></p>
   
 ```xbase
 User Function XBROWSEE()
@@ -208,8 +210,12 @@ User Function SeuPrograma()
 	Local	_nWidth       := oTela2:nWidth //__nWidth (Opcional)
 	Local	_nHeight      := oTela2:nHeight //__nHeight (Opcional)
 	Local	_nBotoes      := 1 //1 - Botoes no topo, 2 - Botoes no rodape
-	Local oPainel1      := Nil
-	Local oEnviar       := Nil
+	Local   _lVersao      := .T. //.T. mostra um menu se tiver nova versão
+	Local   _lLayout      := .T. //.T. mostra botões com CSS
+	Local   _lCheckbox    := .T. //.T. mostra a coluna de checkbox para seleção
+	Local   _lSelecao     := .T. //.T. mostra uma tela de seleção avançada
+	Local oPainel1        := Nil
+	Local oEnviar         := Nil
 
 	Static oTela
 
@@ -219,7 +225,7 @@ User Function SeuPrograma()
 		
 		oEnviar:= tButton():New(000,000, 'Gravar',oPainel1, {|| Gravar(), oTela:End()  },40,16,,,,.T.)
 		
-		U_XBROWSE(oTela /*oParent (obrigatorio)*/, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAlinhamento, _nWidth, _nHeight, _nBotoes )
+		U_XBROWSE(oTela /*oParent (obrigatorio)*/, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAlinhamento, _nWidth, _nHeight, _nBotoes, _lVersao, _lLayout, _lCheckbox, _lSelecao )
     
 	ACTIVATE DIALOG oDlgTela CENTERED
 
