@@ -1,6 +1,8 @@
 # XTCBROWSE
 Componente para gerar um TcBrowse Avançado com pesquisa, exportação para excel, legendas, checkbox, pontos de entrada,edição simples de campos, etc...
 
+Disponível em Português Brasil, Espanhol e Ingles.
+
 O nome do objeto é <b>__oLista</b>
 
 O nome da variavel contendo o conteudo do array é <b>__aLista</b>
@@ -27,7 +29,7 @@ Para saber a quantidade de colunas no grid, use Len(__oLista:aColumns)
 
 ```xbase
 
-U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAlinhamento, _nWidth, _nHeight, _nBotoes, _lVersao, _lLayout, _lCheckbox, _lSelecao  )
+U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAlinhamento, _nWidth, _nHeight, _nBotoes, _lVersao, _lLayout, _lCheckbox, _lSelecao, _lBotaoSair, _lBotaoFiltro  )
 
 ```
 
@@ -48,6 +50,8 @@ U_XBROWSE(oTela, _cAlias, _cQuery, _nIndice, _aIndice, _aFiltro, _aLegenda, _nAl
 | 	_lLayout	| 	Exibe uma tela com formatação usando CSS	| 	Opcional	 |  	.T.	 |
 | 	_lCheckbox	| 	Exibe um checkbox na tela para seleção	| 	Opcional	 |  	.T.	 |
 | 	_lSelecao	| 	Exibe uma tela de seleção de registros com mais recursos	| 	Opcional	 |  	.T.	 |
+| 	_lBotaoSair	| 	Se .T. mostra um botão de SAIR  (Opcional)	| 	Opcional	 |  	.F.	 |
+| 	_lBotaoFiltro	| 	Se .T. mostra o botão de Filtrar  (Opcional)	| 	Opcional	 |  	.F.	 |
 
 Variáveis públicas
 
