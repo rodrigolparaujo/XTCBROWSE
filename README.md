@@ -1,4 +1,4 @@
-<a href="https:///toplist/view/16291396"><img src="https:///banner/big/16291396/9"></a>
+<a href="https://server.nitrado.net/toplist/view/17383816"><img src="https://server.nitrado.net/banner/big/17383816/2" /></a>
 
 # XTCBROWSE
 Componente para gerar um TcBrowse Avançado com pesquisa, exportação para excel, legendas, checkbox, pontos de entrada,edição simples de campos, etc...
@@ -289,4 +289,4 @@ Static Function Gravar()
 
 Return
 ```
-<a href="https:///toplist/view/17500552"><img src="https:///banner/big/17500552/6"></a>
+<a href="https://server.nitrado.net/toplist/view/16291396"><img src="https://server.nitrado.net/banner/big/16291396/6" /></a>
