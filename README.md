@@ -1,3 +1,5 @@
+<a href="https:///toplist/view/16291396"><img src="https:///banner/big/16291396/9"></a>
+
 # XTCBROWSE
 Componente para gerar um TcBrowse Avançado com pesquisa, exportação para excel, legendas, checkbox, pontos de entrada,edição simples de campos, etc...
 
@@ -287,4 +289,4 @@ Static Function Gravar()
 
 Return
 ```
-<center><p><a href="https://dayz-servers.org/server/170059/"><img src="https://dayz-servers.org/server/170059/banners/leaderboard-1.png" border="0" class="img-fluid"></a></p></center>
+<a href="https:///toplist/view/17500552"><img src="https:///banner/big/17500552/6"></a>
